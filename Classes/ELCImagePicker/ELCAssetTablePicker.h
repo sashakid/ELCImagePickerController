@@ -27,5 +27,6 @@
 - (void)preparePhotos;
 
 - (void)doneAction:(id)sender;
+- (void)prepInstanceVariablesWithNavigationItem:(UINavigationItem *)item;
 
 @end

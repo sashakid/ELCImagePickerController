@@ -205,7 +205,7 @@
     [picker.assetGroup setAssetsFilter:[self assetFilter]];
     
 	picker.assetPickerFilterDelegate = self.assetPickerFilterDelegate;
-	
+	[picker prepInstanceVariablesWithNavigationItem:self.navigationItem];
 	[self.navigationController pushViewController:picker animated:YES];
 }
 

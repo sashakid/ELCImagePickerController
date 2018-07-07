@@ -279,5 +279,11 @@
     return count;
 }
 
+- (void)prepInstanceVariablesWithNavigationItem:(UINavigationItem *)item {
+	if (self.immediateReturn) { return ; }
+	UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
+	[item setRightBarButtonItem:doneButtonItem];
+	[item setTitle:NSLocalizedString(@"Choose photo", nil)];
+}
 
 @end
